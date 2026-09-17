@@ -304,7 +304,7 @@ img{ max-width: 100%; display: block; }
   margin-bottom: 10px;
 }
 .book .book-cover-img{
-  width: 56%;
+  width: 80%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border: 1px solid rgba(0,0,0,0.2);
@@ -431,12 +431,12 @@ const SITE = {
   // default when someone opens the site for the first time.
   themes: [
     {
-      name: "Paper & Pine",
+      name: "Light",
       paper: "#FAF8F3", paperDim: "#F1EEE6", ink: "#1C2321", inkSoft: "#55605C",
       line: "#D8D2C4", accent: "#2F6F62", accentInk: "#FAF8F3", gold: "#B8863B"
     },
     {
-      name: "Midnight",
+      name: "Dark",
       paper: "#14181C", paperDim: "#1D2329", ink: "#EDEFF2", inkSoft: "#9AA3AC",
       line: "#2C333B", accent: "#5FB3A3", accentInk: "#14181C", gold: "#D9A85C"
     },
@@ -468,16 +468,16 @@ const SITE = {
         { title: "Mirza - Sahiban", label: "Pilu", image: "", coverColor: "#B8863B", text: "Edit this text for page 2." },
         { title: "Sohni - Mahiwal", label: " ", image: "", coverColor: "#5FB3A3", text: "Edit this text for page 3." },
         { title: "Sassi - Punnu", label: "Hashim Shah", image: "", coverColor: "#7A3B63", text: "Edit this text for page 4." },
-        { title: "Page 5", label: "Book Name 5", image: "", coverColor: "#2D6CB0", text: "Edit this text for page 5." },
-        { title: "Page 6", label: "Book Name 6", image: "", coverColor: "#B5542A", text: "Edit this text for page 6." },
-        { title: "Page 7", label: "Book Name 7", image: "", coverColor: "#3A2A20", text: "Edit this text for page 7." },
+        { title: "Jeona Morh", label: "Book Name 5", image: "", coverColor: "#2D6CB0", text: "Edit this text for page 5." },
+        { title: "Sucha Soorma", label: "Book Name 6", image: "", coverColor: "#B5542A", text: "Edit this text for page 6." },
+        { title: "", label: "Book Name 7", image: "", coverColor: "#3A2A20", text: "Edit this text for page 7." },
         { title: "Page 8", label: "Book Name 8", image: "", coverColor: "#8A6D3B", text: "Edit this text for page 8." },
         { title: "Page 9", label: "Book Name 9", image: "", coverColor: "#1E2A38", text: "Edit this text for page 9." },
-        { title: "Page 10", label: "Book Name 10", image: "", coverColor: "#A17A3A", text: "Edit this text for page 10." }
+        { title: "", label: "", image: "", coverColor: "#A17A3A", text: "Edit this text for page 10." }
       ]
     },
     {
-      title: "Area Two",
+      title: "Articles",
       blurb: "A short line describing what lives in this area.",
       image: "",
       pages: [
@@ -494,7 +494,7 @@ const SITE = {
       ]
     },
     {
-      title: "Area Three",
+      title: "Translations",
       blurb: "A short line describing what lives in this area.",
       image: "",
       pages: [
@@ -532,7 +532,10 @@ const SITE = {
       blurb: "A short line describing what lives in this area.",
       image: "",
       pages: [
-        { title: "Page 1", label: "Book Name 1", image: "", coverColor: "#2F6F62", text: "Edit this text for page 1." },
+        { title: "Page 1",
+          blurb: "Book Name 1",
+          image: "", 
+            { title: "Page 1", label: "Book Name 1", image: "", coverColor: "#2F6F62", text: "Edit this text for page 1." }, },
         { title: "Page 2", label: "Book Name 2", image: "", coverColor: "#B8863B", text: "Edit this text for page 2." },
         { title: "Page 3", label: "Book Name 3", image: "", coverColor: "#5FB3A3", text: "Edit this text for page 3." },
         { title: "Page 4", label: "Book Name 4", image: "", coverColor: "#7A3B63", text: "Edit this text for page 4." },
